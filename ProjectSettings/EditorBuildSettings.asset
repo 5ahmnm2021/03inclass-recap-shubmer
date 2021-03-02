@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/MyGame/Scenes/00WelcomeScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/MyGame/Scenes/01ColorScene.unity
+    guid: b6a13c82059524b90ac18330d3c31864
+  - enabled: 1
+    path: Assets/MyGame/Scenes/02NumberScene.unity
+    guid: 9836d44620ca147ff9e82e2666087e2b
   m_configObjects: {}
