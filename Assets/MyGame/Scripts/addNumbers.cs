@@ -5,10 +5,7 @@ using UnityEngine.UI;
 
 public class addNumbers : MonoBehaviour
 {
-    /*public InputField Input1;
-    public InputField Input2;
-    public Text ErgebnisText;
-    public Text ZustandText;*/
+    
 
     public InputField input1;
     public InputField input2;
@@ -47,42 +44,9 @@ public class addNumbers : MonoBehaviour
         }
 
         summe.text = (field1Float + field2Float).ToString();
-        //Debug.Log("Die Addition ergibt: " + summe.text);
+        Debug.Log("Ergebnis: " + summe.text);
     }
     
 
-    /* public void AddNumbersOnClick()
-    {
-       string TextInput1 = Input1.text;
-       int result = 0;
-
-       if(int.TryParse(TextInput1, out result))
-       {
-
-       } 
-       else 
-       {
-           Input1.text = "Enter a valid number!"
-           Input1.image.color = Color.red;
-       }
-
-        string TextInput2 = Input2.text;
-       int result2 = 0;
-
-       if(int.TryParse(TextInput2, out result2))
-       {
-
-       } 
-       else 
-       {
-           Input2.text = "Enter a valid number!"
-           Input2.image.color = Color.red;
-       }
-
-       float num1 = float.Parse(Input1.text);
-        float num2 = float.Parse(Input2.text);
-        float Result = num1 + num2;
-        ErgebnisText.text = Result.ToString();
-    }*/
 
 }
