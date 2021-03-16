@@ -166,6 +166,55 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &220029397
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 220029399}
+  - component: {fileID: 220029400}
+  m_Layer: 0
+  m_Name: Addieren
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &220029399
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 220029397}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &220029400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 220029397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6b1996d7e85c4957953868f714bdb2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  input1: {fileID: 735971539}
+  input2: {fileID: 979532961}
+  summe: {fileID: 2059426027}
+  ausgabe: {fileID: 1837242375}
+  field1Float: 0
+  field2Float: 0
 --- !u!1 &518025245
 GameObject:
   m_ObjectHideFlags: 0
@@ -561,7 +610,7 @@ GameObject:
   - component: {fileID: 735971540}
   - component: {fileID: 735971539}
   m_Layer: 5
-  m_Name: InputField
+  m_Name: InputField1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -940,7 +989,7 @@ GameObject:
   - component: {fileID: 979532962}
   - component: {fileID: 979532961}
   m_Layer: 5
-  m_Name: InputField (1)
+  m_Name: InputField2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1228,7 +1277,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1097158520}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 220029400}
+        m_TargetAssemblyTypeName: addNumbers, Assembly-CSharp
+        m_MethodName: Iwas
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1097158520
 MonoBehaviour:
   m_ObjectHideFlags: 0
