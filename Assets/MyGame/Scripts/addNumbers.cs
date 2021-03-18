@@ -3,50 +3,62 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class addNumbers : MonoBehaviour
+public class AddNumbers : MonoBehaviour
 {
-    
-
     public InputField input1;
     public InputField input2;
     public Text summe;
     public Text ausgabe;
 
-    private Color rot = Color.red;
-    private Color weiss = Color.white;
+    //private Color rot = Color.red;
+    //private Color weiss = Color.white;
 
-    public float field1Float;
-    public float field2Float;
+    //private float field1Float;
+    //private float field2Float;
 
     public void Iwas()
     {
+        string Errormsg = "Geben Sie eine gültige Zahl ein";
+        float field1Float = 0;
+        float field2Float = 0;
+
+        bool num1 = true;
+        bool num2 = true;
+
         try
         {
             field1Float = float.Parse(input1.text);
-            input1.image.color = weiss;
-            ausgabe.text = "";
+            input1.image.color = Color.white;
         }
         catch (System.Exception)
         {
-            ausgabe.text = "Geben Sie eine gültige Zahl ein";
-            input1.image.color = rot;
+            ausgabe.text = Errormsg;
+            input1.image.color = Color.red;
+            num1 = false;
         }
 
         try
         {
             field2Float = float.Parse(input2.text);
-            input2.image.color = weiss;
+            input2.image.color = Color.white;
         }
         catch (System.Exception)
         {
-            ausgabe.text = "Geben Sie eine gültige Zahl ein";
-            input2.image.color = rot;
+            ausgabe.text = Errormsg;
+            input2.image.color = Color.red;
+            num2 = false;
         }
 
-        summe.text = (field1Float + field2Float).ToString();
-        Debug.Log("Ergebnis: " + summe.text);
+        if (num1 && num2)
+        {
+            summe.text = (field1Float + field2Float).ToString();
+            Debug.Log("Ergebnis: " + summe.text);
+        }
+        
+        else{
+            summe.text = "/";
+        }
+
+        
     }
-    
-
-
 }
