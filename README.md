@@ -1,33 +1,29 @@
-# TestVisualStudio
+# README
 
-To use an IDE (Integrated Development Environment) easens the way of programming. 
-An IDE consists of many parts such as
-+ Compiler
-+ Interpreter
-+ Debugger
-+ Editor
-+ Verioncontrol
-+ ...
+### Project description: 
+Recap Project by Stefanie Hubmer
+Sceen switches, random color change when a key is pressed, calculater 
 
-To easen up the programming process it is very important to adapt the IDE to your own needs.
-We need the following core elements:
-+ IntelliSense
-+ Code Highlighting
-+ Mark Compile-time Errors
-+ Refactoring
+### Development platform: 
+MacOS Mojave, Unity 2020.1.5f1, Visual Studio 2019 for mac Version 8.8.10.2
 
+### Target platform: 
+WebGL 960x600
 
-1) Clone this project
-2) Open the script TestMeErrors.cs with your IDE
-3) Try to fix the errors based on the support from the IDE.
+### Visuals: 
+None
 
-Our IDE Visual Studio Community 2019: 
-Download Link IDE (Visual Studio) https://visualstudio.microsoft.com/de/downloads/
+### Necessary setup/execution steps: 
+Install Unity (Version 2020.1.5f1 recommended), Open the project, press play
 
-**Visual Studio**
-+ https://docs.microsoft.com/de-de/visualstudio/productinfo/vs2019-system-requirements-mac
-+ https://docs.microsoft.com/en-us/visualstudio/mac/?view=vsmac-2019
-+ https://docs.microsoft.com/de-de/visualstudio/cross-platform/visual-studio-tools-for-unity?view=vs-2019
+### Third party material: 
+None
 
+### Project state: 
+100%
 
+### Lessons Learned: 
+
+Improved C# skilles, How a good code must look
+Copyright by Stefanie Hubmer
 
