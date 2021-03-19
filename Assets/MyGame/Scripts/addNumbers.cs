@@ -10,12 +10,6 @@ public class AddNumbers : MonoBehaviour
     public Text summe;
     public Text ausgabe;
 
-    //private Color rot = Color.red;
-    //private Color weiss = Color.white;
-
-    //private float field1Float;
-    //private float field2Float;
-
     public void Iwas()
     {
         string Errormsg = "Geben Sie eine gültige Zahl ein";
